@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我 | 個人主頁</title>
+    <!-- 引入 Tailwind CSS (用來美化網頁的工具) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 FontAwesome 圖示庫 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 簡單的字體設定與動畫效果 */
+        body {
+            font-family: 'Helvetica Neue', Arial, 'LiHei Pro', '微軟正黑體', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- 頂部歡迎區塊 (Header) -->
+    <!-- 如果想換顏色，可以更改 from-blue-500 to-indigo-600 這些字眼 -->
+    <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20 px-6 text-center rounded-b-[3rem] shadow-lg">
+        <div class="max-w-3xl mx-auto">
+            <!-- 大頭貼：你可以把 src 裡面的網址換成你自己的照片網址 -->
+            <img src="https://api.dicebear.com/9.x/micah/svg?seed=Smile" alt="我的頭像" class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-md mb-6 object-cover bg-white">
+            
+            <!-- 在這裡修改你的名字 -->
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-wider">哈囉，我是 <span class="text-yellow-300">阮識翰</span></h1>
+            
+            <!-- 在這裡修改你的一句話簡介 -->
+            <p class="text-xl md:text-2xl opacity-90 mb-8">「持續學習，熱愛生活！」</p>
+            
+            <!-- 聯絡按鈕 -->
+            <a href="#contact" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
+                認識我更多
+            </a>
+        </div>
+    </header>
+
+    <!-- 主要內容區 -->
+    <main class="max-w-4xl mx-auto px-6 py-12">
+
+        <!-- 關於我區塊 -->
+        <section class="bg-white rounded-3xl shadow-md p-8 mb-10 hover-scale">
+            <h2 class="text-2xl font-bold mb-6 text-blue-600 border-b-2 border-blue-100 pb-2">
+                <i class="fa-solid fa-user text-xl mr-2"></i> 關於我
+            </h2>
+            <!-- 在這裡修改你的詳細介紹 -->
+            <p class="text-gray-600 leading-relaxed text-lg">
+                你好！我是一個剛開始接觸網頁設計的新手。我對新鮮事物充滿好奇心，喜歡探索未知的領域。雖然我現在還不太會寫程式，但我正在努力學習中！我希望未來能親手打造出更多有趣、實用的網站。平時我喜歡看書、看電影，偶爾也會去戶外走走，享受大自然。
+            </p>
+        </section>
+
+        <!-- 技能與特質區塊 -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            <!-- 專業技能 (左邊) -->
+            <div class="bg-white rounded-3xl shadow-md p-8 hover-scale">
+                <h2 class="text-2xl font-bold mb-6 text-indigo-600 border-b-2 border-indigo-100 pb-2">
+                    <i class="fa-solid fa-lightbulb text-xl mr-2"></i> 學習目標
+                </h2>
+                <ul class="space-y-4 text-gray-600">
+                    <!-- 你可以修改這些技能名稱 -->
+                    <li class="flex items-center">
+                        <i class="fa-brands fa-html5 text-orange-500 text-2xl w-8"></i>
+                        <span class="text-lg">HTML & CSS (學習中)</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-pen-nib text-pink-500 text-2xl w-8"></i>
+                        <span class="text-lg">介面設計美感</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-camera text-gray-700 text-2xl w-8"></i>
+                        <span class="text-lg">攝影與影像紀錄</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 興趣愛好 (右邊) -->
+            <div class="bg-white rounded-3xl shadow-md p-8 hover-scale">
+                <h2 class="text-2xl font-bold mb-6 text-green-600 border-b-2 border-green-100 pb-2">
+                    <i class="fa-solid fa-heart text-xl mr-2"></i> 興趣愛好
+                </h2>
+                <div class="flex flex-wrap gap-3">
+                    <!-- 你可以修改這些興趣標籤 -->
+                    <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium"><i class="fa-solid fa-music mr-1"></i> 聽音樂</span>
+                    <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium"><i class="fa-solid fa-plane mr-1"></i> 旅遊</span>
+                    <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium"><i class="fa-solid fa-book mr-1"></i> 閱讀</span>
+                    <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm font-medium"><i class="fa-solid fa-film mr-1"></i> 看電影</span>
+                    <span class="bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium"><i class="fa-solid fa-mug-hot mr-1"></i> 喝咖啡</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 聯絡方式區塊 -->
+        <section id="contact" class="bg-gray-800 text-white rounded-3xl shadow-md p-8 text-center hover-scale">
+            <h2 class="text-2xl font-bold mb-6 text-blue-300">
+                <i class="fa-solid fa-envelope text-xl mr-2"></i> 聯絡我
+            </h2>
+            <p class="mb-6 text-gray-300">如果你想和我交流，或者有任何有趣的想法，歡迎隨時聯絡我！</p>
+            
+            <div class="flex justify-center space-x-6">
+                <!-- 在 href="mailto:..." 填入你的信箱 -->
+                <a href="mailto:your_email@example.com" class="text-gray-400 hover:text-white transform hover:scale-125 transition duration-300 text-3xl">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </a>
+                <!-- 如果有其他社群可以放在這裡，把 # 換成你的網址 -->
+                <a href="#" class="text-gray-400 hover:text-blue-400 transform hover:scale-125 transition duration-300 text-3xl">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-pink-400 transform hover:scale-125 transition duration-300 text-3xl">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 網頁頁尾 -->
+    <footer class="text-center text-gray-500 py-6 text-sm">
+        <p>&copy; 2026 小明的個人網站. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
